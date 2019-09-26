@@ -1,53 +1,59 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: #ddd;
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
 
-h1{
+h1 {
   font-size: 50px;
   line-height: 1;
   padding: 50px 0;
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 32px;
   line-height: 1.5;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
 }
 
-nav li{
+nav li {
   /*Your code here */
   display: inline-block;
   padding-right: 20px;
 }
 
-nav a{
+nav a {
   color: black;
   font-weight: bold;
   text-decoration: none;
   /*Your code here - remove the underline*/
 }
 
-nav a:hover{
-  text-decoration: underline/*Your code here - add the underline*/;
+nav a:hover {
+  text-decoration: underline
+    /*Your code here - add the underline*/
+  ;
 }
 
-.skip a{
+.skip a {
   background: white;
   left: 0;
   padding: 6px;
-  position: absolute;/*Your code here - position relative to the parent */;
-  top: -40px;    /*Your code here - place 40px higher */;
+  position: absolute;
+  /*Your code here - position relative to the parent */
+  ;
+  top: -40px;
+  /*Your code here - place 40px higher */
+  ;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
@@ -55,30 +61,29 @@ nav a:hover{
 
 /*Your code here*/
 /*Add the selector and rule to move the skip link in focus to the exact top.*/
-.skip a:focus{
-  top:0;
+.skip a:focus {
+  top: 0;
 }
 
 /*Your code here*/
-:focus{
-/*Add the selector and code to put a 2px black border around all elements in focus.*/
-border: 2px solid black;
-outline: none;
+:focus {
+  /*Add the selector and code to put a 2px black border around all elements in focus.*/
+  border: 2px solid black;
+  outline: none;
 }
 
-
-footer{
+footer {
   background-color: black;
   color: white;
-  grid-column: 1 / -1;  /*Can you explain what this does? It makes the footer spans the full page*/
-/*  grid-row: 7 / auto;   Can you rewrite it?*/
+  grid-column: 1 / -1;
+  /*Can you explain what this does? It makes the footer spans the full page*/
+  /*  grid-row: 7 / auto;   Can you rewrite it?*/
   grid-row: 7;
   padding-top: 30px;
   text-align: center;
 }
 
-
-.container{
+.container {
   /*Your code here  */
   display: grid;
   grid-template-columns: 100px 500px 100px;
@@ -88,8 +93,8 @@ footer{
   width: 100vw;
 }
 
-.nav{
-   /*Your code here */
+.nav {
+  /*Your code here */
   grid-column: 1/4;
   grid-row: 1/2;
   /*Provided*/
@@ -98,28 +103,34 @@ footer{
   text-align: left;
 }
 
-header{
-  background-attachment:fixed; /* Parallax effect */
-  background-image: url("../images/header.jpg");      /* Your code here - Link to header.jpg in the images folder */
-  background-position: top;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;;       /* Parallax effect */
+header {
+  background-attachment: fixed;
+  /* Parallax effect */
+  background-image: url("../images/header.jpg");
+  /* Your code here - Link to header.jpg in the images folder */
+  background-position: top;
+  /* Parallax effect */
+  background-repeat: no-repeat;
+  /* Parallax effect */
+  background-size: cover;
+  ;
+  /* Parallax effect */
   color: white;
-  height: 400px;                /* Parallax effect */
-
+  height: 400px;
+  /* Parallax effect */
   /*Your code here - cover the entire row*/
   grid-column: 1/4;
   grid-row: 2/3;
 }
 
-header p{
+header p {
   color: white;
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
 }
 
-.about-image{
+.about-image {
   /*Your code here */
   grid-column: 1/4;
   grid-row: 3/4;
@@ -127,13 +138,13 @@ header p{
   max-height: 700px;
 }
 
-.about{
+.about {
   /*Your code here */
   grid-column: 2/3;
   grid-row: 3/4;
 }
 
-.method-image{
+.method-image {
   /*Your code here */
   grid-column: 1/4;
   grid-row: 4/5;
@@ -141,61 +152,67 @@ header p{
   max-height: 700px;
 }
 
-.method{
-    /*Your code here - start in the 2nd column*/
+.method {
+  /*Your code here - start in the 2nd column*/
   grid-column: 2/3;
   grid-row: 4/5;
 }
 
-.clients-image{
- /*Your code here */
- grid-column: 1/4;
- grid-row: 5/6;
- overflow: hidden;
- max-height: 700px;
+.clients-image {
+  /*Your code here */
+  grid-column: 1/4;
+  grid-row: 5/6;
+  overflow: hidden;
+  max-height: 700px;
 }
 
-.clients{
- /*Your code here */
- grid-column: 2/3;
- grid-row: 5/6;
+.clients {
+  /*Your code here */
+  grid-column: 2/3;
+  grid-row: 5/6;
 }
 
-.contact-image{
-   /*Your code here */
-   grid-column: 1/4;
-   grid-row: 6/7;
-   overflow: hidden;
-   max-height: 700px;
+.contact-image {
+  /*Your code here */
+  grid-column: 1/4;
+  grid-row: 6/7;
+  overflow: hidden;
+  max-height: 700px;
 }
 
-.contact{
-   /*Your code here */
-   grid-column: 2/3;
-   grid-row: 6/7;
+.contact {
+  /*Your code here */
+  grid-column: 2/3;
+  grid-row: 6/7;
 }
 
-.text-block{
-   /*Your code here */
-  align-self: center; /*center vertically*/
-  justify-self: center;/*center horizontally*/
+.text-block {
+  /*Your code here */
+  align-self: center;
+  /*center vertically*/
+  justify-self: center;
+  /*center horizontally*/
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
 }
 
-
-
 @media screen and (min-width: 800px)
-/*Your code here - Add the first media query.*/{
 
-  .container{
+/*Your code here - Add the first media query.*/
+  {
+  .container {
     /*Your code here */
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   }
 
-  .nav{
+  header {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+
+  .nav {
     background-color: #ddd;
     /* Your code here */
     grid-column: 1/6;
@@ -204,22 +221,21 @@ header p{
     text-align: right;
   }
 
-  .about-image{
-     /*Your code here */
-     grid-column: 2/4;
-     grid-row: 3/4;
-     overflow: hidden;
-     max-height: 700px;
-   }
+  .about-image {
+    /*Your code here */
+    grid-column: 2/4;
+    grid-row: 3/4;
+    overflow: hidden;
+    max-height: 700px;
+  }
 
-
-  .about{
+  .about {
     /*Your code here */
     grid-column: 3/5;
     grid-row: 3/4;
   }
 
-  .method-image{
+  .method-image {
     /*Your code here */
     grid-column: 3/5;
     grid-row: 4/5;
@@ -227,13 +243,13 @@ header p{
     max-height: 700px;
   }
 
-  .method{
+  .method {
     /*Your code here */
     grid-column: 2/4;
     grid-row: 4/5;
   }
 
-  .clients-image{
+  .clients-image {
     /*Your code here */
     grid-column: 2/4;
     grid-row: 5/6;
@@ -241,13 +257,13 @@ header p{
     max-height: 700px;
   }
 
-  .clients{
+  .clients {
     /*Your code here */
     grid-column: 3/5;
     grid-row: 5/6;
   }
 
-  .contact-image{
+  .contact-image {
     /*Your code here */
     grid-column: 3/5;
     grid-row: 6/7;
@@ -255,31 +271,34 @@ header p{
     max-height: 700px;
   }
 
-  .contact{
+  .contact {
     /*Your code here */
     grid-column: 2/4;
     grid-row: 6/7;
-   }
+  }
+}
 
-}  /*End the media query*/
-
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
+/*End the media query*/
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    /* Removes scroll animation */
   }
 
-  .skip a{
+  .skip a {
     background: white;
     left: 0;
     padding: 6px;
     position: absolute;
     top: -40px;
-    -webkit-transition: default;/* Your code here - set to default setting */
-    transition: default; /* Your code here - set to default setting */
+    -webkit-transition: default;
+    /* Your code here - set to default setting */
+    transition: default;
+    /* Your code here - set to default setting */
     z-index: 1;
   }
 
-  .skip a:focus{
-    top:0;
+  .skip a:focus {
+    top: 0;
   }
 }
